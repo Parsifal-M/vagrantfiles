@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     cicdtoolbox.ssh.insert_key = false
     cicdtoolbox.vm.box = VAGRANTFILE_VM_BOX
     cicdtoolbox.vm.hostname = 'cicdtoolbox'
-    cicdtoolbox.vm.network "private_network", ip: "192.168.100.10"
+    cicdtoolbox.vm.network "private_network", ip: ""
     cicdtoolbox.vm.provider "virtualbox" do |vb|
       vb.gui = false
       vb.memory = "4096"
